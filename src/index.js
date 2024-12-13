@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { ProductProvider } from "./context/ProductContext.js";
+import { ShopContextProvider } from './context/shopContext-old.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  <ProductProvider>
   <React.StrictMode>
-    <App />
+  <ShopContextProvider>
+      <App />
+  </ShopContextProvider>
   </React.StrictMode>
+  </ProductProvider>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
