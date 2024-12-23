@@ -15,7 +15,7 @@ const Cart = () => {
                     if (cartItem && cartItem.count > 0) {
                         return <Product key={p.id} data={p} />;
                     }
-                    return null; // Return null for items not in the cart
+                    return null;
                 })}
             </div>
             <button className="btn btn-warning m-3" onClick={resetCart}>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Use React Router for navigation
+import { Link } from 'react-router-dom'; 
 import { PRODUCTS } from '../data/products';
 
 const FeaturedProducts = () => {

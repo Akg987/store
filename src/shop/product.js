@@ -8,8 +8,8 @@ const Product = (props) => {
     const productCount = cartItems?.find((item) => item.id === id)?.count || 0;
 
     return (
-        <div className="col-md-4 col-lg-3 mb-3"> {/* Adjusted mb-3 for less bottom margin */}
-            <div className="card h-100"> {/* h-100 to ensure cards are uniform in height */}
+        <div className="col-md-4 col-lg-3 mb-3"> 
+            <div className="card h-100">
                 <img src={productImage} className="card-img-top" alt={productName} />
                 <div className="card-body text-center">
                     <h5 className="card-title">{productName}</h5>

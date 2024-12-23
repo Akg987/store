@@ -7,12 +7,12 @@ const Home = () => {
     const PRODUCTS = [
         {
             id: 1,
-            productImage: luster1, // Replace with the actual path to your image
+            productImage: luster1,
             title: 'Example Product Title',
             description: 'Example product description goes here.',
             price: 100000,
         },
-        // Add more products if needed
+        
     ];
 
     return (

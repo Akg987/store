@@ -8,7 +8,7 @@ const Search = ({ onSearch }) => {
         const query = event.target.value;
         setSearchQuery(query);
         if (onSearch && typeof onSearch === "function") {
-            onSearch(query); // Call onSearch if it's defined and is a function
+            onSearch(query);
         }
     };
 
@@ -19,7 +19,7 @@ const Search = ({ onSearch }) => {
                 value={searchQuery}
                 onChange={handleInputChange}
                 placeholder="جستجوی محصولات..."
-                className="form-control me-2" // Added Bootstrap form-control class for styling
+                className="form-control me-2" 
             />
             <button className="btn btn-primary" type="button">جستجو</button> {/* Added a search button */}
         </div>

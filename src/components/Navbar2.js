@@ -8,7 +8,7 @@ const Navbar = () => {
 
     const { cartItems } = useContext(ShopContext);
 
-    // Calculate total items in the cart
+    // حساب کردن کل ایتم ها در cart
     const totalItems = cartItems.reduce((acc, item) => acc + item.count, 0);
 
 
@@ -16,13 +16,13 @@ const Navbar = () => {
     const [searchResults, setSearchResults] = useState([]);
     const navigate = useNavigate();
 
-    // Handle search input changes
+    // کنترل تغییرات ورودی جستجو
     const handleSearch = (query) => {
         searchInProduct(query);
         setSearchResults(filteredProducts);
     };
 
-    // Handle product click from search results
+    // مدیریت کلیک محصول از نتایج جستجو
     const handleProductClick = (productId) => {
         navigate(`/shop/${productId}`);
     };

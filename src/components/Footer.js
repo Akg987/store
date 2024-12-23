@@ -4,9 +4,9 @@ const Footer = () => {
     const [email, setEmail] = useState('');
 
     const handleSubscribe = () => {
-        // Implement subscription logic here
+        
         console.log(`Subscribed: ${email}`);
-        setEmail(''); // Clear the input field after subscribing
+        setEmail('');
     };
 
     return (

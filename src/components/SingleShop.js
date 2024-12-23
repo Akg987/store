@@ -12,7 +12,7 @@ const SingleShop = ({ products }) => {
     return <h2 className="text-center">محصول یافت نشد</h2>;
   }
 
-  // Get the count of the product in the cart
+  // تعداد محصول در سبد خرید را دریافت کنید
   const productInCart = cartItems?.find((item) => item.id === product.id);
   const productCount = productInCart?.count || 0;
 

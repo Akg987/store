@@ -9,7 +9,7 @@ export const ProductProvider = ({ children }) => {
 
     const searchInProduct = (query) => {
         if (query.trim() === "") {
-            setFilteredProducts(PRODUCTS); // Reset to all products if the query is empty
+            setFilteredProducts(PRODUCTS); // در صورت خالی بودن پرس و جو، همه محصولات را بازنشانی کنید
         } else {
             const filtered = PRODUCTS.filter((product) =>
                 product.productName.toLowerCase().includes(query.toLowerCase())
